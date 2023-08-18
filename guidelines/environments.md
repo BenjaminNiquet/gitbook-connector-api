@@ -49,6 +49,10 @@ Use any of the 4 sets of Client/AccessTokens to access the Gross Pricing demo en
 * **ClientToken** - `07AB1F14B55C49B8BDD6AD200158423B-273A4497AFF5E20566D7199DB3DC2BA`
 * **AccessToken** - `39E301DD5A1C4A569087AD20015F60DD-50DC28896E9090CCA0995C9BBD90351`
 
+**Multi-Property Integration: `Connector API Test Client Multi-Properties`**
+* **ClientToken** - `B355EA0E0F2E4980B593B06200E50ECE-682F475752E7DEAB03F3EBC9448BEF5`
+* **AccessToken** - `6FEC2E12509743688941B06200EFB942-6867ED02A953B06FA8F31A2FB3D8C15`
+
 ### Net Pricing Environment
 
 The authentication below will connect with the demo enterprise that is configured with Net Pricing. This enterprise is based in the `United States - Washington DC` legal and tax environment. It accepts `GBP`, `EUR` and `USD` currencies (any of them may be used). Refer to [Taxations](#taxations) for proper usage of the relevant [Tax rate codes](../operations/configuration.md#tax-rate).
