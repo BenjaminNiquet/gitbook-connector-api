@@ -2,6 +2,9 @@
 
 For use cases, when polling would be too resource consuming or not enough "real-time", websockets should be used. After successful connection, the client will start receiving messages depending on configuration of the Connector integration in Commander.
 
+We highly recommend utilizing the Webhook method instead of Websockets. Websockets is unstable, and therefore, we are unable to offer a comprehensive assistance for any issues that may arise. Nevertheless, we have a best practice article in our HelpCenter.
+However, we do acknowledge two exceptions where the use of Websockets is recommended: payments notification and key cutter device notification.
+
 ## Endpoint
 
 `[WebSocketAddress]/ws/connector`
