@@ -1,0 +1,23 @@
+### Voucher Integration 
+
+A Voucher Integration can pull information about rates, guests, reservations, open and closed bills
+
+## Voucher Functionality in Mews 
+
+I would recommend to go through the Voucher functionality on our [Help Center (https://help.mews.com/s/article/Understanding-Vouchers?language=en_US)] to understand what voucher functionality means in Mews. 
+
+### Pull from Mews 
+                                                                               
+## Mapping
+                                                                               
+Fetch vouchers created by the property through the endpoint [vouchers/getAll endpoint(https://mews-systems.gitbook.io/connector-api/operations/vouchers#get-all-vouchers)                                                                                
+
+## Pull Information
+
+* Pull reservations created with a Voucher either with [reservations/getAll/2023-06-06(https://mews-systems.gitbook.io/connector-api/operations/reservations#get-all-reservations-ver-2023-06-06)] or through our [Webhook Service Event(https://mews-systems.gitbook.io/connector-api/webhooks/wh-general)] 
+* Pull Guest data through the Endpoint [customers/getAll(https://mews-systems.gitbook.io/connector-api/operations/customers#get-all-customers)]
+* Pull Items on the Open Bill of the guest through orderitems/getAll filtering the response through the serviceOrderId matching with reservationId (Id Field)  from reservations/getAll/2023-06-06 Response or matching AccountId on orderitems/getAll with CustomerId (Id Field) from customers/getAll Response
+
+## Push Voucher to Mews
+
+You will need to push the Voucher in Mews as an external Payment Type through the endpoint [payments/addExternal(https://mews-systems.gitbook.io/connector-api/operations/payments#add-external-payment)].     
